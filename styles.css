@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.content {
+  height: 100vh;
+  width: 50vw;
+  min-width: 700px;
+  margin: auto;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+header p {
+  font-size: 12px;
+}
+
+header i {
+  margin-right: 40px;
+  font-size: 1.2rem;
+  color: #1da1f2;
+}
+
+.sub-info {
+  color: grey;
+}
+
+.profile {
+  box-sizing: content-box;
+  background-color: pink;
+  height: 450px;
+}
+
+.profile-images {
+  height: 50%;
+  background-image: url(./assets/elonmusk-cover.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.profile-images img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+}
