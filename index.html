@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -37,6 +39,42 @@
           <div class="profile-images">
             <img src="./assets/elonmusk.jpg" alt="Elon Musk" />
           </div>
+          <div class="profile-info">
+            <div class="username">
+              <div class="display-text" id="profile-display">
+                <h2 class="display-name">
+                  <span> Elon Musk </span>
+                  <span>
+                    <i class="fas fa-certificate"></i>
+                  </span>
+                </h2>
+                <div class="sub-info">
+                  <div>
+                    <p class="username">@elonmusk</p>
+                  </div>
+                  <div class="join-date">
+                    <i class="far fa-calendar-alt"></i>
+                    <p>Joined June 2009</p>
+                  </div>
+                  <div class="follower-info">
+                    <p>
+                      <span class="following">103</span>
+                      Following
+                      <span class="followers">47.9M</span>
+                      Followers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="follow-button">Following</button>
+          </div>
+          <ul class="content-tabs">
+            <li class="active">Tweets</li>
+            <li>Tweets & Replies</li>
+            <li>Media</li>
+            <li>Likes</li>
+          </ul>
         </section>
         <section class="feed"></section>
       </main>

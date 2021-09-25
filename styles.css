@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 h1,
 h2,
@@ -12,6 +12,10 @@ p {
 h2 {
   font-size: 18px;
   font-weight: 700;
+}
+
+button {
+  cursor: pointer;
 }
 
 .content {
@@ -29,8 +33,12 @@ header {
   padding: 20px 20px;
 }
 
-header p {
+.display-text p {
   font-size: 12px;
+}
+
+.display-text i {
+  color: #1da1f2;
 }
 
 header i {
@@ -40,17 +48,15 @@ header i {
 }
 
 .sub-info {
-  color: grey;
+  color: #aab8c2;
 }
 
 .profile {
   box-sizing: content-box;
-  background-color: pink;
-  height: 450px;
 }
 
 .profile-images {
-  height: 50%;
+  height: 225px;
   background-image: url(./assets/elonmusk-cover.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -66,5 +72,81 @@ header i {
   border: 5px solid white;
   position: absolute;
   top: 100%;
+  left: 20px;
   transform: translateY(-50%);
+}
+
+.profile-info {
+  height: 32%;
+  margin-top: 81px;
+  padding: 5px 25px;
+  position: relative;
+}
+
+.join-date {
+  margin-top: 10px;
+  display: flex;
+}
+
+.join-date i {
+  color: #aab8c2;
+  margin-right: 5px;
+}
+
+.follower-info {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.follower-info span {
+  color: #14171a;
+  font-weight: 700;
+}
+
+.follower-info .followers {
+  margin-left: 20px;
+}
+
+.follow-button {
+  background-color: #1da1f2;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  padding: 10px 20px;
+
+  position: absolute;
+  right: 20px;
+  bottom: 100%;
+  transform: translateY(-50%);
+}
+
+.content-tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.content-tabs li {
+  flex-grow: 1;
+  text-align: center;
+
+  padding: 10px 10px;
+  font-size: 18px;
+  color: #657787;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 2px solid transparent;
+  transition: background-color 500ms;
+  cursor: pointer;
+}
+
+.content-tabs li.active {
+  color: #1da1f2;
+  border-bottom: 2px solid #1da1f2;
+}
+
+.content-tabs li:hover {
+  background-color: #f5f8fa;
 }
