@@ -75,7 +75,6 @@ header i {
 
 .profile-images {
   height: 225px;
-  background-image: url(./assets/elonmusk-cover.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -185,9 +184,9 @@ header i {
   border-radius: 50%;
 }
 .tweet-content {
-  width: 80%;
+  width: 90%;
   color: #657785;
-  padding: 0 20px;
+  margin-left: 20px;
 }
 .tweet-info {
   display: flex;

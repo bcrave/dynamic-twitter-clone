@@ -17,7 +17,7 @@
       src="https://kit.fontawesome.com/ab975ea356.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
     <title>Dynamic Twitter</title>
   </head>
   <body>
@@ -26,48 +26,14 @@
         <button>
           <i class="fas fa-arrow-left"></i>
         </button>
-        <div class="display-text" id="header-display">
-          <h2 class="display-name">
-            <span> Elon Musk </span>
-            <span>
-              <i class="fas fa-certificate"></i>
-            </span>
-          </h2>
-          <p class="sub-info">13.6k Tweets</p>
-        </div>
+        <div class="display-text" id="header-display"></div>
       </header>
       <main>
         <section class="profile">
-          <div class="profile-images">
-            <img src="./assets/elonmusk.jpg" alt="Elon Musk" />
-          </div>
+          <div class="profile-images"></div>
           <div class="profile-info">
             <div class="username">
-              <div class="display-text" id="profile-display">
-                <h2 class="display-name">
-                  <span> Elon Musk </span>
-                  <span>
-                    <i class="fas fa-certificate"></i>
-                  </span>
-                </h2>
-                <div class="sub-info">
-                  <div>
-                    <p class="username">@elonmusk</p>
-                  </div>
-                  <div class="join-date">
-                    <i class="far fa-calendar-alt"></i>
-                    <p>Joined June 2009</p>
-                  </div>
-                  <div class="follower-info">
-                    <p>
-                      <span class="following">103</span>
-                      Following
-                      <span class="followers">47.9M</span>
-                      Followers
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <div class="display-text" id="profile-display"></div>
             </div>
             <button class="follow-button">Following</button>
           </div>
@@ -78,44 +44,9 @@
             <li>Likes</li>
           </ul>
         </section>
-        <section class="feed">
-          <div class="tweet">
-            <div class="tweet-image">
-              <img src="./assets/elonmusk.jpg" alt="Elon Musk" />
-            </div>
-            <div class="tweet-content">
-              <div class="tweet-info">
-                <div class="tweet-info-left">
-                  <h3>Elon Musk</h3>
-                  <i class="fas fa-certificate"></i>
-                  <p class="username">@elonmusk</p>
-                  &middot;
-                  <p>38m</p>
-                </div>
-                <div class="tweet-info-right">&bull; &bull; &bull;</div>
-              </div>
-              <div class="tweet-message">
-                <p>I admit to judging books by their cover</p>
-              </div>
-              <ul class="tweet-actions">
-                <li>
-                  <i class="far fa-comment"></i>
-                  <p>5.2K</p>
-                </li>
-                <li>
-                  <i class="fas fa-retweet"></i>
-                  <p>7.7K</p>
-                </li>
-                <li>
-                  <i class="far fa-heart"></i>
-                  <p>65.2K</p>
-                </li>
-                <li><i class="fas fa-share-square"></i></li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        <section class="feed"></section>
       </main>
     </div>
   </body>
+  <script type="text/javascript" src="index.js"></script>
 </html>
