@@ -44,7 +44,7 @@ const user2 = {
   followerCount: 53800000,
   avatarURL: "assets/billgates.jpg",
   coverPhotoURL: "assets/billgates-cover.jpeg",
-  numOfTweets: "10.5K",
+  tweetCount: 10500,
   tweets: [
     {
       text: "Everybody asks, how is the next Windows coming along? But nobody asks how is Bill? :/",
