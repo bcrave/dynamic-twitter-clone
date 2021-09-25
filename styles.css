@@ -23,14 +23,33 @@ button {
   width: 50vw;
   min-width: 700px;
   margin: auto;
-  border-left: 1px solid #f1f1f1;
-  border-right: 1px solid #f1f1f1;
+  border-left: 1px solid #e1e8ed;
+  border-right: 1px solid #e1e8ed;
 }
 
 header {
   display: flex;
   align-items: center;
   padding: 20px 20px;
+}
+
+header button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 40px;
+  height: 40px;
+  width: 40px;
+  transition: background-color 200ms;
+}
+
+header button:hover {
+  background-color: #f5f8fa;
+}
+
+header button:active {
+  background-color: #e1e8ed;
 }
 
 .display-text p {
@@ -42,13 +61,12 @@ header {
 }
 
 header i {
-  margin-right: 40px;
   font-size: 1.2rem;
   color: #1da1f2;
 }
 
 .sub-info {
-  color: #aab8c2;
+  color: #657786;
 }
 
 .profile {
@@ -89,7 +107,7 @@ header i {
 }
 
 .join-date i {
-  color: #aab8c2;
+  color: #657786;
   margin-right: 5px;
 }
 
@@ -107,7 +125,7 @@ header i {
 }
 
 .follow-button {
-  background-color: #1da1f2;
+  background-color: rgba(29, 161, 242, 1);
   color: white;
   font-weight: 600;
   border: none;
@@ -119,6 +137,9 @@ header i {
   right: 20px;
   bottom: 100%;
   transform: translateY(-50%);
+}
+.follow-button:hover {
+  background-color: rgba(29, 161, 242, 0.9);
 }
 
 .content-tabs {
@@ -149,4 +170,70 @@ header i {
 
 .content-tabs li:hover {
   background-color: #f5f8fa;
+}
+
+.tweet {
+  padding: 10px 20px;
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid #e1e8ed;
+  border-bottom: 1px solid #e1e8ed;
+}
+.tweet-image img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.tweet-content {
+  width: 80%;
+  color: #657785;
+  padding: 0 20px;
+}
+.tweet-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tweet-info-left {
+  display: flex;
+  align-items: center;
+}
+.tweet-info-right {
+  text-align: end;
+  font-size: 12px;
+}
+.tweet-info h3 {
+  color: #14171a;
+  margin-right: 5px;
+}
+.tweet-info i {
+  margin-right: 5px;
+  color: #1da1f2;
+}
+.tweet-info p {
+  margin: 0 5px;
+  font-size: 12px;
+}
+.tweet-message {
+  color: #14171a;
+  font-size: 14px;
+}
+.tweet-actions {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  margin-top: 20px;
+}
+.tweet-actions li {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+.tweet-actions li i {
+  margin-right: 10px;
+}
+.tweet-actions li p {
+  font-size: 14px;
+  font-weight: 300;
 }
