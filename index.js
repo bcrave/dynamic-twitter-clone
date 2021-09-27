@@ -81,7 +81,8 @@ const profileDisplay = document.getElementById("profile-display");
 const feed = document.querySelector(".feed");
 
 /* Templating */
-headerDisplay.innerHTML = `
+if (!user)
+  headerDisplay.innerHTML = `
   <h2 class="display-name">
     ${user.displayName}
     <span>
@@ -90,7 +91,6 @@ headerDisplay.innerHTML = `
   </h2>
   <p class="sub-info">${user.tweetCount / 1000}K Tweets</p>
 `;
-
 profileImages.style.backgroundImage = `url(${user.coverPhotoURL})`;
 profileImages.innerHTML = `<img src="${user.avatarURL}" alt="${user.displayName}" />`;
 profileDisplay.innerHTML = `
